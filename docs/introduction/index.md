@@ -74,8 +74,9 @@ With ES modules, instead of importing the whole `utils` object, we can just impo
 import { ajax } from './utils';
 const query = 'Rollup';
 // call the ajax function
-ajax(`https://api.example.com?search=${query}`).then(handleResponse);
+ajax(`https://api.vercel.com?search=${query}`).then(handleResponse);
 ```
+ export required function/utility be independent 
 
 Because Rollup includes the bare minimum, it results in lighter, faster, and less complicated libraries and applications. Since this approach can utilise explicit `import` and `export` statements, it is more effective than simply running an automated minifier to detect unused variables in the compiled output code.
 
