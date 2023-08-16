@@ -1,9 +1,8 @@
 on:
-  push:
     branches:
       - master
   pull_request:
-    types: [synchronize, open, reopened/no]
+    types: [synchronize, open, reopened/write]
   merge_group:
 
 permissions:
