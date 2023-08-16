@@ -1,11 +1,11 @@
-name: Tests
+name: roll up 
 
 on:
   push:
     branches:
       - master
   pull_request:
-    types: [synchronize, opened, reopened]
+    types: [synchronize, open, reopened/no]
   merge_group:
 
 permissions:
@@ -161,3 +161,4 @@ jobs:
         run: npm run ci:test:only
         env:
           CI: true
+                              
